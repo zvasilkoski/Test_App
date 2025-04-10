@@ -1,0 +1,35 @@
+[project]
+name = "test-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" } # Optional: Specify your license
+authors = [
+  { name = "Zlatko Vasilkoski", email = "zlatko@bu.edu" }, # Optional: Add author info
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", # Optional
+    "Operating System :: OS Independent",
+    "Framework :: Streamlit",
+]
+dependencies = [
+    "streamlit>=1.0", # Specify Streamlit version constraint if needed
+    "pandas >= 1.0", # Specify Pandas version constraint if needed
+]
+
+# Optional dependencies, e.g., if you re-add Gemini features
+[project.optional-dependencies]
+gemini = [
+    "google-generativeai >= 0.4", # Check for appropriate version
+    "python-dotenv >= 0.20",     # Check for appropriate version
+]
+
+[project.urls] # Optional: Add relevant URLs
+"Homepage" = "https://github.com/yourusername/yourproject" # Example
+"Bug Tracker" = "https://github.com/yourusername/yourproject/issues" # Example
+
+# You might add tool-specific configurations below, e.g., for linters or formatters
+# [tool.black]
+# line-length = 88
