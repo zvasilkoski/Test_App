@@ -1,6 +1,7 @@
 """
     Gemini Testing App
     To Run: streamlit run app.py
+    Link:  https://testapp-ahxt4bxcoykzutbdzg28lh.streamlit.app/
 
 """
 
@@ -20,7 +21,7 @@ import io # Required for download button buffer
 MCQ_FILE = "questions/Chapter_2_MC.md"
 # Updated columns as per requirement
 RESULTS_COLS = ["Question_ID", "Student_Answer", "Correct_Answer", "Points"]
-USER_NAMES = ["Irena", "Ljube", "Zlatko"] # Allowed users
+USER_NAMES = ["Irena", "Ljube", "Zlatko", "AI"] # Allowed users
 
 # --- Helper Functions ---
 
